@@ -1,0 +1,38 @@
+<Project>
+
+	<!-- Configuracion para librerias (que generan paquetes nuget) -->
+    <PropertyGroup Condition="'$(GeneratePackageOnBuild)' == 'true'">        		        
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>        
+        
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>        
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
+        <PackageIcon>logo.png</PackageIcon>
+        <PackageTags>CAdES, Cypher, DSS</PackageTags>
+
+        <Product>CAdES-DSS</Product>
+        <Authors>David Gonzalez Zornoza</Authors>      
+        <Copyright>Copyright © David Gonzalez Zornoza 2024</Copyright>
+    </PropertyGroup>
+
+	<!-- Configuracion para proyectos que no generan paquetes nugets (tests y herramientas) -->
+	<PropertyGroup Condition="'$(GeneratePackageOnBuild)' == 'false'">		
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>   
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+    
+    <!-- Añadir archivos readme y logo en los proyectos para los paquetes nuget -->
+    <ItemGroup Condition="'$(GeneratePackageOnBuild)' == 'true'">
+        <None Include="$(SolutionDir)../readme.md" Visible="False">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="$(SolutionDir)/.editorconfig" Link=".editorconfig" Visible="False" />
+        <None Include="$(SolutionDir)../assets\logo.png" Visible="False">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+    
+</Project>

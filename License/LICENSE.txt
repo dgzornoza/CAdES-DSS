@@ -1,5 +1,6 @@
-FirmaCadesNet - Librería para la generación de firmas CAdES
+CAdES-DSS Library forked from "FirmaCadesNet - Librería para la generación de firmas CAdES"
 Copyright (C) 2017 Dpto. de Nuevas Tecnologías de la Dirección General de Urbanismo del Ayto. de Cartagena
+Portions Copyright (c) 2024 David González Zornoza
 
 This program is free software: you can redistribute it and/or modify
 it under the +terms of the GNU Lesser General Public License as published by

@@ -1,5 +1,7 @@
-# FirmaCadesNet - Librería para la generación de firmas CAdES
+# CAdES-DSS Library forked from "FirmaCadesNet - Librería para la generación de firmas CAdES"
 # Copyright (C) 2017 Dpto. de Nuevas Tecnologías de la Dirección General de Urbanismo del Ayto. de Cartagena
+# Portions Copyright (C) 2024 David González Zornoza
+#
 # See the accompanying LICENSE file for details.
 #
 # A Contributing Author is a person or company who contributed code that
@@ -9,3 +11,4 @@
 # of Contributing Authors, in alphabetic order.
 
 J. Arturo Aguado <informatica@gemuc.es> - Dpto. de Nuevas Tecnologías de la Dirección General de Urbanismo del Ayto. de Cartagena
+David González Zornoza <dgzornoza@dgzornoza.com> - Refactor to .net core updates
