@@ -1,34 +1,29 @@
-FirmaCadesNet
-=============
+# CAdES-DSS (CAdES Digital Signature Service Library)
 
-:red_circle: **Atención**: este proyecto se encuentra sin mantenimiento.
+.NET Core library for CAdES signature generation
 
-INTRODUCCIÓN
--------------
-FirmaCadesNet es una librería desarrollada en C# para la generación de firmas CAdES realizada por el Dpto. de Nuevas Tecnologías de la Concejalía de Urbanismo del Ayuntamiento de Cartagena.
+*Forked From: <https://github.com/ctt-gob-es/FirmaCadesNet>*
 
+## Features
 
-CARACTERÍSTICAS
+- Signature Generation CAdES-BES, CAdES-EPES y CAdES-T.
+
+- Formats `attached implicit` and `detached explicit`.
+
+- Support to co-sign and counter-sign.
+
+- Support sign Algorithms RSA-SHA1, RSA-SHA256 y RSA-SHA512.
+
+## Contributions
+
 ---------------
 
-- Generación de firmas CAdES-BES, CAdES-EPES y CAdES-T.
+**@nonorganic** by porting the DSS signing framework to .NET, and by the developers of the @firma client, some of the ideas and code snippets of these projects have served as the basis for the development of this library.
+*<https://github.com/nonorganic/dssnet>* \
+*<https://github.com/ctt-gob-es/clienteafirma>*
 
-- Formatos attached implicit y detached explicit.
+**@ctt-gob-es** by development of the [@FirmaCadesNet](https://github.com/ctt-gob-es/FirmaCadesNet), where this project has been based on.
 
-- Soporte para co-firmas y contrafirmas.
+## License
 
-- Soporte para métodos de firma RSA-SHA1, RSA-SHA256 y RSA-SHA512.
-
-Dentro de la solución se encuentra un proyecto con ejemplos de uso de la librería. 
-
-
-AGRADECIMIENTOS
----------------
-
-A @nonorganic por el port del framework de firma DSS a .NET, y a los desarrolladores del cliente @firma, algunas de las ideas y fragmentos de código de dichos proyectos han servido como base para la elaboración de esta librería.
-
-Más información en:
-
-https://github.com/nonorganic/dssnet
-
-https://github.com/ctt-gob-es/clienteafirma
+See License folder for more information.
