@@ -138,7 +138,8 @@ public class SignerInfoNode
 
         if (signerInformation.DigestAlgOid == DigestMethod.SHA1.Oid)
         {
-            BcCms.Attribute attr = signerInformation.SignedAttributes[PkcsObjectIdentifiers.IdAASigningCertificate];
+            var attr = signerInformation.SignedAttributes[PkcsObjectIdentifiers.IdAASigningCertificate] ?? throw new Exception("No se ha encontrado el atributo de firma para firmar en SHA1");
+
             SigningCertificate sc = SigningCertificate.GetInstance(attr.AttrValues[0]);
             EssCertID ecid = sc.GetCerts()[0];
             issuerSerial = ecid.IssuerSerial;
